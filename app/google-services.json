@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774982334245",
+    "firebase_url": "https://esp-barometer-199fb.firebaseio.com",
+    "project_id": "esp-barometer-199fb",
+    "storage_bucket": "esp-barometer-199fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774982334245:android:57c110d99af30130",
+        "android_client_info": {
+          "package_name": "eu.hrgovic.feri.vrbarometer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774982334245-4f5bh6f06q7qqu81j4v7ggd4j3mb2f4g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eu.hrgovic.feri.vrbarometer",
+            "certificate_hash": "17a8163eb77e78222f17314f526b0699865681d9"
+          }
+        },
+        {
+          "client_id": "774982334245-8qiqcgi99vfg84kukri4ji22jc27pu0k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5XeyoBvPbG2HYf0rhcMk00VMwV8MbrA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774982334245-8qiqcgi99vfg84kukri4ji22jc27pu0k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
