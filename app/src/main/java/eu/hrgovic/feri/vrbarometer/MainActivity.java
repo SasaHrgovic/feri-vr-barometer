@@ -2,13 +2,14 @@ package eu.hrgovic.feri.vrbarometer;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -40,16 +41,47 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         };
 
-        mLogoutButton = (MaterialButton) findViewById(R.id.button_logout);
-        mLogoutButton.setOnClickListener(this);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
+        //mLogoutButton = (MaterialButton) findViewById(R.id.button_logout);
+        //mLogoutButton.setOnClickListener(this);
     }
+
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment selectedFragment = null;
+
+            switch (item.getItemId()) {
+                case R.id.nav_home:
+                    selectedFragment = new HomeFragment();
+                    break;
+                case R.id.nav_devices:
+                    selectedFragment = new DevicesFragment();
+                    break;
+                case R.id.nav_locations:
+                    selectedFragment = new LocationsFragment();
+                    break;
+                case R.id.nav_settings:
+                    selectedFragment = new SettingsFragment();
+                    break;
+            }
+
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+
+            return true;
+        }
+    };
 
     @Override
     public void onClick(View v) {
         int i = v.getId();
-        if (i == R.id.button_logout) {
-            mAuth.signOut();
-        }
+        //if (i == R.id.button_logout) {
+          //  mAuth.signOut();
+        //}
     }
 
     @Override
