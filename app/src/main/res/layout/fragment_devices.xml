@@ -3,11 +3,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/devices_recycler_view"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/devices_text_auto"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Devices"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp" />
+
+    <TextView
+        android:id="@+id/devices_text_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New devices will appear automatically"
+        android:gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        />
 
 </RelativeLayout>

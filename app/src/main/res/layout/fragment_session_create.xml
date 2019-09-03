@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- Name Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_session_name"
+            android:layout_marginLeft="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Session name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Name Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_measuring_interval"
+            android:layout_marginLeft="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Measuring interval (seconds)" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_session_device"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginRight="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:editable="false"
+            android:hint="Device"
+            android:backgroundTint="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+
+        <AutoCompleteTextView
+            android:id="@+id/dropdown_session_location"
+            android:layout_marginLeft="-12dp"
+            android:layout_marginRight="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:editable="false"
+            android:hint="Location"
+            android:backgroundTint="@color/colorAccent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

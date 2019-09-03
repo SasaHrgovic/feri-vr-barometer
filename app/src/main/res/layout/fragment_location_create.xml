@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="24dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <!-- Name Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_location_name"
+            android:layout_marginLeft="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Location name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Address Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_location_address"
+            android:layout_marginLeft="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Address" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- City Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_location_city"
+            android:layout_marginLeft="-12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="City" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

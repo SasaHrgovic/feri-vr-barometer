@@ -28,7 +28,7 @@ public class SessionFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Sess
     @Override
     protected void onBindViewHolder(@NonNull SessionViewHolder sessionViewHolder, int i, @NonNull Session session) {
         sessionViewHolder.nameText.setText(session.getName());
-        sessionViewHolder.uidText.setText(this.getRef(i).getKey());
+        sessionViewHolder.detailsText.setText("Every " + session.getInterval() + " seconds");
     }
 
     @NonNull

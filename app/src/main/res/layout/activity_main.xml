@@ -6,10 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar_layout"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/colorAccent"
+            app:title="VR Barometer"
+            android:theme="@style/ToolbarStyle"
+            android:elevation="4dp" />
+    </com.google.android.material.appbar.AppBarLayout>
+
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout"
         android:layout_above="@id/bottom_navigation"></FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

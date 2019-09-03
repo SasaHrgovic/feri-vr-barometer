@@ -6,14 +6,14 @@
     android:paddingBottom="16dp" >
 
     <TextView
-        android:id="@+id/text_session_name"
-        android:text="Placeholder"
+        android:id="@+id/text_device_name"
+        android:text="abcdef"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/text_session_details"
-        android:text="Placeholder"
+        android:id="@+id/text_device_mac"
+        android:text="abcdef"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

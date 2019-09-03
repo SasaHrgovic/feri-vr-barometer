@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="16dp"
     android:paddingBottom="16dp" >
 
     <TextView
-        android:id="@+id/text_session_name"
-        android:text="Placeholder"
+        android:id="@+id/text_location_name"
+        android:text="Placehoder text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/text_session_details"
-        android:text="Placeholder"
+        android:id="@+id/text_location_address"
+        android:text="Placehoder text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

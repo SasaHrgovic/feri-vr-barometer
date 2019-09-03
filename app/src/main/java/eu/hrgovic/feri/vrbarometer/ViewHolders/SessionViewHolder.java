@@ -12,15 +12,17 @@ import eu.hrgovic.feri.vrbarometer.R;
 // 3. Implement View.OnClickListener
 public class SessionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-    public TextView uidText;
     public TextView nameText;
+    public TextView detailsText;
+
+
     SessionFirebaseRecyclerAdapter.OnSessionListener onSessionListener;
 
     public SessionViewHolder(View itemView, SessionFirebaseRecyclerAdapter.OnSessionListener onSessionListener) {
         super(itemView);
 
-        uidText = itemView.findViewById(R.id.text_session_id);
         nameText = itemView.findViewById(R.id.text_session_name);
+        detailsText = itemView.findViewById(R.id.text_session_details);
 
         // 4. Attach the oncClickListener to the entire ViewHolder
         itemView.setOnClickListener(this);
@@ -31,7 +33,7 @@ public class SessionViewHolder extends RecyclerView.ViewHolder implements View.O
 
     public void bindToSession(Session session, View.OnClickListener startClickListener) {
         nameText.setText(session.getName());
-        uidText.setText(session.getUid());
+        detailsText.setText("Every + " + session.getInterval() + " seconds");
     }
 
     @Override
