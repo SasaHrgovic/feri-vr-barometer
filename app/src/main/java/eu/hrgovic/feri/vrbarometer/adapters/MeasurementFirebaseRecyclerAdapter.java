@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.Adapters;
+package eu.hrgovic.feri.vrbarometer.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,9 +12,9 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import eu.hrgovic.feri.vrbarometer.Models.Measurement;
+import eu.hrgovic.feri.vrbarometer.models.Measurement;
 import eu.hrgovic.feri.vrbarometer.R;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.MeasurementViewHolder;
+import eu.hrgovic.feri.vrbarometer.view_holders.MeasurementViewHolder;
 
 public class MeasurementFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Measurement, MeasurementViewHolder> {
 

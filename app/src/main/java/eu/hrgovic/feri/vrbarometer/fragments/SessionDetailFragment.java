@@ -25,12 +25,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import eu.hrgovic.feri.vrbarometer.Adapters.MeasurementFirebaseRecyclerAdapter;
-import eu.hrgovic.feri.vrbarometer.Models.Device;
-import eu.hrgovic.feri.vrbarometer.Models.Measurement;
-import eu.hrgovic.feri.vrbarometer.Models.Session;
+import eu.hrgovic.feri.vrbarometer.adapters.MeasurementFirebaseRecyclerAdapter;
+import eu.hrgovic.feri.vrbarometer.models.Device;
+import eu.hrgovic.feri.vrbarometer.models.Measurement;
+import eu.hrgovic.feri.vrbarometer.models.Session;
 import eu.hrgovic.feri.vrbarometer.R;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.MeasurementViewHolder;
+import eu.hrgovic.feri.vrbarometer.view_holders.MeasurementViewHolder;
 //import eu.hrgovic.feri.vrbarometer.fragments.MeasurementDetailFragment;
 
 // 2. Implement interface

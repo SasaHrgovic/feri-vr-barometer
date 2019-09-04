@@ -1,8 +1,6 @@
 package eu.hrgovic.feri.vrbarometer.fragments;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -15,14 +13,10 @@ import androidx.fragment.app.Fragment;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import eu.hrgovic.feri.vrbarometer.LoginActivity;
-import eu.hrgovic.feri.vrbarometer.MainActivity;
-import eu.hrgovic.feri.vrbarometer.Models.Location;
+import eu.hrgovic.feri.vrbarometer.models.Location;
 import eu.hrgovic.feri.vrbarometer.R;
 
 public class LocationCreateFragment extends Fragment {

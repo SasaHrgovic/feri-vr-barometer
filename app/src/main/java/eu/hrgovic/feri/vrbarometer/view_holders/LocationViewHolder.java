@@ -1,12 +1,12 @@
-package eu.hrgovic.feri.vrbarometer.ViewHolders;
+package eu.hrgovic.feri.vrbarometer.view_holders;
 
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import eu.hrgovic.feri.vrbarometer.Adapters.LocationFirebaseRecyclerAdapter;
-import eu.hrgovic.feri.vrbarometer.Models.Location;
+import eu.hrgovic.feri.vrbarometer.adapters.LocationFirebaseRecyclerAdapter;
+import eu.hrgovic.feri.vrbarometer.models.Location;
 import eu.hrgovic.feri.vrbarometer.R;
 
 // 3. Implement View.OnClickListener

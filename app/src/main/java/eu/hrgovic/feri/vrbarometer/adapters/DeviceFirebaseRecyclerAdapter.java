@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.Adapters;
+package eu.hrgovic.feri.vrbarometer.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-import eu.hrgovic.feri.vrbarometer.Models.Device;
+import eu.hrgovic.feri.vrbarometer.models.Device;
 import eu.hrgovic.feri.vrbarometer.R;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.DeviceViewHolder;
+import eu.hrgovic.feri.vrbarometer.view_holders.DeviceViewHolder;
 
 public class DeviceFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Device, DeviceViewHolder> {
 

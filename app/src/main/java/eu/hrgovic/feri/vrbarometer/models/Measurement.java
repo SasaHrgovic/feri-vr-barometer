@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.Models;
+package eu.hrgovic.feri.vrbarometer.models;
 
 public class Measurement {
     private int mPressure;

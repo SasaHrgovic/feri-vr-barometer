@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.ViewHolders;
+package eu.hrgovic.feri.vrbarometer.view_holders;
 
 import android.view.View;
 import android.widget.TextView;
@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import eu.hrgovic.feri.vrbarometer.Adapters.MeasurementFirebaseRecyclerAdapter;
-import eu.hrgovic.feri.vrbarometer.Models.Measurement;
+import eu.hrgovic.feri.vrbarometer.adapters.MeasurementFirebaseRecyclerAdapter;
+import eu.hrgovic.feri.vrbarometer.models.Measurement;
 import eu.hrgovic.feri.vrbarometer.R;
 
 // 3. Implement View.OnClickListener

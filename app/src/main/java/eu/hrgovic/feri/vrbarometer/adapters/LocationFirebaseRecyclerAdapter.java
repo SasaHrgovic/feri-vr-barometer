@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.Adapters;
+package eu.hrgovic.feri.vrbarometer.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,9 @@ import androidx.annotation.NonNull;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-import eu.hrgovic.feri.vrbarometer.Models.Location;
+import eu.hrgovic.feri.vrbarometer.models.Location;
 import eu.hrgovic.feri.vrbarometer.R;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.LocationViewHolder;
+import eu.hrgovic.feri.vrbarometer.view_holders.LocationViewHolder;
 
 public class LocationFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Location, LocationViewHolder> {
 

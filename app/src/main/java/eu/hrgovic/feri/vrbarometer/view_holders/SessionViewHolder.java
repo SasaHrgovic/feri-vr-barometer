@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.ViewHolders;
+package eu.hrgovic.feri.vrbarometer.view_holders;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Random;
 
-import eu.hrgovic.feri.vrbarometer.Adapters.SessionFirebaseRecyclerAdapter;
-import eu.hrgovic.feri.vrbarometer.Models.Session;
+import eu.hrgovic.feri.vrbarometer.adapters.SessionFirebaseRecyclerAdapter;
+import eu.hrgovic.feri.vrbarometer.models.Session;
 import eu.hrgovic.feri.vrbarometer.R;
 
 // 3. Implement View.OnClickListener

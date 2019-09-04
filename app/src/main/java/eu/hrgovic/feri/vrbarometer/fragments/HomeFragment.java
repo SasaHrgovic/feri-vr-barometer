@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer;
+package eu.hrgovic.feri.vrbarometer.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -19,9 +19,10 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import eu.hrgovic.feri.vrbarometer.Adapters.SessionFirebaseRecyclerAdapter;
-import eu.hrgovic.feri.vrbarometer.Models.Session;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.SessionViewHolder;
+import eu.hrgovic.feri.vrbarometer.R;
+import eu.hrgovic.feri.vrbarometer.adapters.SessionFirebaseRecyclerAdapter;
+import eu.hrgovic.feri.vrbarometer.models.Session;
+import eu.hrgovic.feri.vrbarometer.view_holders.SessionViewHolder;
 import eu.hrgovic.feri.vrbarometer.fragments.SessionCreateFragment;
 import eu.hrgovic.feri.vrbarometer.fragments.SessionDetailFragment;
 

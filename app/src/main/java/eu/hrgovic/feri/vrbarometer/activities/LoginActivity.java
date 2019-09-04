@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer;
+package eu.hrgovic.feri.vrbarometer.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +16,9 @@ import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+
+import eu.hrgovic.feri.vrbarometer.MainActivity;
+import eu.hrgovic.feri.vrbarometer.R;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 

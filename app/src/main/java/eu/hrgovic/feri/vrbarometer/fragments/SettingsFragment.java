@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer;
+package eu.hrgovic.feri.vrbarometer.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,6 +12,8 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
+
+import eu.hrgovic.feri.vrbarometer.R;
 
 public class SettingsFragment extends Fragment {
 

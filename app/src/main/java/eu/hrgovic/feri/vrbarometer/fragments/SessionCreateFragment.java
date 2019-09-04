@@ -25,9 +25,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-import eu.hrgovic.feri.vrbarometer.Models.Device;
-import eu.hrgovic.feri.vrbarometer.Models.Location;
-import eu.hrgovic.feri.vrbarometer.Models.Session;
+import eu.hrgovic.feri.vrbarometer.models.Device;
+import eu.hrgovic.feri.vrbarometer.models.Location;
+import eu.hrgovic.feri.vrbarometer.models.Session;
 import eu.hrgovic.feri.vrbarometer.R;
 
 public class SessionCreateFragment extends Fragment {

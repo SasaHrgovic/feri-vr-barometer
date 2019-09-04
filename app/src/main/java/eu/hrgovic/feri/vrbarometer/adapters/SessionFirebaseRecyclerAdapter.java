@@ -1,4 +1,4 @@
-package eu.hrgovic.feri.vrbarometer.Adapters;
+package eu.hrgovic.feri.vrbarometer.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +11,9 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 import java.util.Random;
 
-import eu.hrgovic.feri.vrbarometer.Models.Session;
+import eu.hrgovic.feri.vrbarometer.models.Session;
 import eu.hrgovic.feri.vrbarometer.R;
-import eu.hrgovic.feri.vrbarometer.ViewHolders.SessionViewHolder;
+import eu.hrgovic.feri.vrbarometer.view_holders.SessionViewHolder;
 
 public class SessionFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Session, SessionViewHolder> {
 

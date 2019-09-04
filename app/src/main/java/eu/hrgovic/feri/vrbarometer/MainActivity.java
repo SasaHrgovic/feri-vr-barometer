@@ -14,6 +14,12 @@ import com.google.android.material.button.MaterialButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import eu.hrgovic.feri.vrbarometer.activities.LoginActivity;
+import eu.hrgovic.feri.vrbarometer.fragments.DevicesFragment;
+import eu.hrgovic.feri.vrbarometer.fragments.HomeFragment;
+import eu.hrgovic.feri.vrbarometer.fragments.LocationsFragment;
+import eu.hrgovic.feri.vrbarometer.fragments.SettingsFragment;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private MaterialButton mLogoutButton;
