@@ -3,7 +3,10 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="16dp">
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    android:paddingBottom="8dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,14 +27,14 @@
                     android:text="Pressure"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"/>
+                    android:textSize="9sp"/>
 
                 <TextView
                     android:id="@+id/text_measurement_pressure"
                     android:text="Placehoder text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp"/>
+                    android:textSize="16sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -43,14 +46,14 @@
                     android:text="Humidity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"/>
+                    android:textSize="9sp"/>
 
                 <TextView
                     android:id="@+id/text_measurement_humidity"
                     android:text="Placehoder text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -62,22 +65,31 @@
                     android:text="Temperature"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="12sp"/>
+                    android:textSize="9sp"/>
 
                 <TextView
                     android:id="@+id/text_measurement_temperature"
                     android:text="30 C"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="24sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
         </LinearLayout>
 
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/text_measurement_time"
+            android:text="12.02. at 12:04:33"
+            android:textSize="9sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
         <View
+            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#ababab">
+            android:background="#cccccc">
 
         </View>
     </LinearLayout>

@@ -6,12 +6,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/devices_recycler_view"
         android:layout_alignParentTop="true"
-        android:layout_above="@id/devices_text_auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp" />
+        android:layout_height="match_parent" />
 
     <TextView
         android:id="@+id/devices_text_auto"

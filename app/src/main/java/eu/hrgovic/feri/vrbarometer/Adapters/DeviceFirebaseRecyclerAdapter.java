@@ -28,7 +28,7 @@ public class DeviceFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Devic
     @Override
     protected void onBindViewHolder(@NonNull DeviceViewHolder deviceViewHolder, int i, @NonNull Device device) {
         deviceViewHolder.nameText.setText(device.getName());
-        deviceViewHolder.macText.setText(device.getMac());
+        deviceViewHolder.macText.setText("MAC: " + device.getMac());
         //deviceViewHolder.uidText.setText(this.getRef(i).getKey());
     }
 

@@ -4,7 +4,7 @@ public class Measurement {
     private int mPressure;
     private int mTemperature;
     private float mHumidity;
-    private double mTimestamp;
+    private long mTimestamp;
     private String mSessionUid;
 
     public Measurement() {}
@@ -18,8 +18,8 @@ public class Measurement {
     public float getHumidity() { return mHumidity; }
     public void setHumidity(int humidity) { mHumidity = humidity; }
 
-    public double getTimestamp() { return mTimestamp; }
-    public void setTimestamp(double timestamp) { mTimestamp = timestamp; }
+    public long getTimestamp() { return mTimestamp; }
+    public void setTimestamp(long timestamp) { mTimestamp = timestamp; }
 
     public String getSessionUid() { return mSessionUid; }
     public void setSessionUid(String sessionUid) { mSessionUid = sessionUid; }

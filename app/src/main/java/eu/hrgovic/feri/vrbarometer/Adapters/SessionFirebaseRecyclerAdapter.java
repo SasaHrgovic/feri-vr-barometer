@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
+import java.util.Random;
+
 import eu.hrgovic.feri.vrbarometer.Models.Session;
 import eu.hrgovic.feri.vrbarometer.R;
 import eu.hrgovic.feri.vrbarometer.ViewHolders.SessionViewHolder;
@@ -27,8 +29,15 @@ public class SessionFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<Sess
 
     @Override
     protected void onBindViewHolder(@NonNull SessionViewHolder sessionViewHolder, int i, @NonNull Session session) {
+        int[] emojis = { R.drawable.a1, R.drawable.a2, R.drawable.a3, R.drawable.a4, R.drawable.a5 };
+
+        Random rand = new Random();
+        int min = 0;
+        int max = 4;
+
         sessionViewHolder.nameText.setText(session.getName());
-        sessionViewHolder.detailsText.setText("Every " + session.getInterval() + " seconds");
+        sessionViewHolder.detailsText.setText("Every " + session.getInterval()/1000 + " seconds");
+        sessionViewHolder.emojiImage.setImageResource(emojis[rand.nextInt((max - min) + 1) + min]);
     }
 
     @NonNull

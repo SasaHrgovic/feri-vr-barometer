@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import eu.hrgovic.feri.vrbarometer.Models.Measurement;
 import eu.hrgovic.feri.vrbarometer.R;
 import eu.hrgovic.feri.vrbarometer.ViewHolders.MeasurementViewHolder;
@@ -27,8 +30,16 @@ public class MeasurementFirebaseRecyclerAdapter extends FirebaseRecyclerAdapter<
 
     @Override
     protected void onBindViewHolder(@NonNull MeasurementViewHolder measurementViewHolder, int i, @NonNull Measurement measurement) {
+        Date date = new Date(measurement.getTimestamp()*1000);
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.");
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm:ss");
+
+        String timestamp = dateFormat.format(date) + " at " + timeFormat.format(date);
+
         measurementViewHolder.pressureText.setText(measurement.getPressure() + " Pa");
         measurementViewHolder.humidityText.setText(measurement.getHumidity() + "%");
+        measurementViewHolder.temperatureText.setText(measurement.getTemperature() + " ℃");
+        measurementViewHolder.timeText.setText(timestamp);
     }
 
     @NonNull

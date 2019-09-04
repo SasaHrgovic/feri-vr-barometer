@@ -171,7 +171,7 @@ public class SessionDetailFragment extends Fragment implements MeasurementFireba
         mRecyclerView.setLayoutManager(mLayoutManager);
 
         FirebaseRecyclerOptions options = new FirebaseRecyclerOptions.Builder<Measurement>()
-                .setQuery(mDatabase.child("measurements"), Measurement.class)
+                .setQuery(mDatabase.child("measurements").orderByChild("sessionUid").equalTo(mSessionId), Measurement.class)
                 .build();
 
         // 7. Setting the onMeasurementListener in the ViewHolder - pass listener to adapter
